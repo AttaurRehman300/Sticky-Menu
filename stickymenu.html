@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky Menu</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #container p{
+            text-align: justify;
+        }
+        #aboutus-img{
+            width: 95%;
+            height: auto;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://www.creativefabrica.com/wp-content/uploads/2019/09/30/People-natural-logo-Vector-Graphics-by-Wachied-4-580x386.jpg" id="logo"  alt="">
+    </div>
+    <nav id="menu-bar" class="sticky">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact</li>
+    </nav>
+    <div id="container">
+        <h1>About US</h1>
+        <img src="https://thumbs.dreamstime.com/z/business-people-holding-placards-forming-contact-us-group-multiethnic-group-41013659.jpg" id="aboutus-img" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptate architecto natus quas eius rerum similique porro. Deleniti ea id fuga fugiat tempora, delectus, blanditiis voluptatum repudiandae ullam, aliquid rem dicta necessitatibus! Sint, non. Doloribus dolore, architecto voluptate iure vero sed ad aspernatur blanditiis quod officia inventore, expedita reprehenderit soluta assumenda cupiditate molestiae nesciunt quisquam enim, sint id quaerat! Incidunt sed fuga magnam magni, blanditiis quibusdam iure voluptates in assumenda nihil quis, hic enim error veritatis ducimus, aspernatur eveniet cum? Quisquam omnis eveniet illum ipsum. Sunt ipsa, excepturi minus voluptatum quas pariatur veniam minima aperiam dolor at asperiores molestias blanditiis. Libero nemo amet, facere perspiciatis iusto non quae ratione laudantium unde laboriosam consectetur at placeat nesciunt totam quaerat ipsum voluptate eaque dolor. Architecto numquam recusandae error, ullam quia delectus ipsam at tenetur voluptatem consequatur, officiis, modi asperiores nam dicta cupiditate eum officia reiciendis soluta fugit nisi corrupti veniam quisquam! Facilis nam veniam perferendis unde sint modi accusamus quam autem quidem, quos voluptate dolorum. Quisquam iusto quae voluptatem vel dolores accusantium placeat ut natus minima esse nulla hic aut recusandae temporibus nisi cupiditate officia veritatis ipsam facere dolorem sit, dignissimos quasi. Deleniti quaerat laborum officiis quae cupiditate sit doloribus veritatis asperiores, tempore praesentium sed. Expedita porro sit illum cumque recusandae eaque vel fugiat laudantium. Dolorem cum autem perspiciatis accusantium enim, dolores cupiditate eos odio aut nulla ad sapiente vero voluptate earum atque, quam pariatur, at quibusdam provident nobis! Dignissimos facere, eum inventore assumenda similique placeat qui blanditiis unde quisquam esse cumque numquam corporis, eaque, delectus optio iusto hic veniam eligendi aliquid? Pariatur eveniet cum vel quidem doloribus illum, delectus, eaque voluptates deserunt debitis provident ut itaque quas nihil omnis fuga magnam quod. Nam laboriosam eveniet aspernatur consequatur saepe voluptatem deleniti quod qui excepturi possimus a placeat, odio odit consectetur officia corrupti illo perferendis delectus reiciendis ducimus, in dolore eligendi error! Qui recusandae deleniti voluptatum provident minus quisquam magni pariatur accusamus tenetur optio hic enim facilis sunt, incidunt quaerat esse sequi animi unde ipsum totam quod nostrum officiis ducimus in! Vel aperiam ipsam libero quam impedit quibusdam, consectetur nihil voluptatum optio aspernatur reiciendis, voluptas dolorum ut harum doloremque sapiente cumque omnis, repudiandae tempore distinctio perferendis eligendi. In non dolorem repellat odio nostrum animi sed veritatis atque voluptates porro commodi ex consectetur, cum error ducimus sint, tempore illum? Ipsa, ut ea magni voluptates cumque consectetur possimus sequi ab architecto exercitationem deserunt qui, nulla similique ullam incidunt maxime mollitia? Minima quod eveniet voluptatibus? Eos, itaque facilis repudiandae autem temporibus repellendus culpa magni optio possimus! Unde consequatur minima incidunt, obcaecati sapiente deleniti cum odit harum dicta fuga dolorum temporibus? Numquam architecto commodi nobis quas aut molestiae officiis consequatur non praesentium quidem repudiandae corrupti unde possimus eligendi eos voluptas aperiam earum blanditiis, accusantium quos delectus ad? Magnam reprehenderit quam, quidem corporis architecto eaque ea asperiores vel aperiam quas quod? Sed laudantium eaque corporis ab suscipit qui facilis? Nesciunt fugiat rerum odit expedita suscipit nisi nulla, autem tempore deleniti vero est praesentium unde sapiente enim explicabo voluptates.
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar =document.getElementById("menu-bar");
+            if(window.pageYOffset >= 170){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
